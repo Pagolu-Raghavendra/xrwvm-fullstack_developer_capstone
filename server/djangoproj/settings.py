@@ -29,11 +29,11 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
-                 'https://raghavendram-8000.theiadockernext-1'+
+                 'https://raghavendram-8000.theiadockernext-1' +
                  '-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
                 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://raghavendram-8000.theiadockernext-1'+
+    'https://raghavendram-8000.theiadockernext-1' +
     '-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
 ]
 
@@ -100,8 +100,8 @@ DATABASES = {
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME':
-        'django.contrib.auth.'+
-        'password_validation.'+
+        'django.contrib.auth.' +
+        'password_validation.' +
         'UserAttributeSimilarityValidator',
     },
     {
@@ -145,7 +145,6 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/static'),
     os.path.join(BASE_DIR, 'frontend/build'),
